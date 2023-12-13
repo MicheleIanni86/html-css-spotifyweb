@@ -154,6 +154,7 @@
 #main-center {
     background-color: var(--bgr-color-main);
     width: 100vw;
+    overflow: auto;
 }
 
 
@@ -165,6 +166,8 @@
     background-color: rgba(0, 0, 0, 0.3);
     text-align: end;
     line-height: 110px;
+    position: sticky;
+    top: 0;
 }
 
 #top-bar .btn-upgrade {
@@ -204,6 +207,9 @@
     color: var(--txt-color-gray);
   }
 
+.list-main-nav ul :first-child {
+    border-bottom: 2px solid #adff2f;
+}
 
 
 /* TITLE RECENTLY PLAYED H2 */
@@ -214,7 +220,7 @@
 }
 
 
-/* ASCOLTI RECENTI */
+/* SEZIONE ASCOLTI RECENTI */
 #recently{
     border: 1px dashed blue;
 }
@@ -232,11 +238,29 @@
 }
 
 #recently .col {
-    height: 150px;
     width: calc(100% / 6 );
     margin: 10px 10px;
+    text-align: center;
     border: 1px dashed maroon;
 
+}
+
+#recently .container img {
+    display: block;
+    max-width: 100%;
+}
+
+#recently .container h4 {
+    margin-top: 17px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+#recently .container span {
+    color: var(--txt-color-gray);
+    font-weight: bold;
 }
 
 
