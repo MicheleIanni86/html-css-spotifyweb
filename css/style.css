@@ -70,6 +70,7 @@
 
 .nav-name-playlist {
     width: 100%;
+    flex-grow: 1;
 
 
     /* debug */
@@ -90,10 +91,8 @@
 
 .nav-add-playlist {
     padding: 0 20px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    padding-top: 20px;
     color: var(--txt-color-gray);
-
 }
 
 .nav-add-playlist h3 {
@@ -113,6 +112,16 @@
     font-weight: bold;
 }
 
+/* NAV NAME PLAYLIST */
+.nav-name-playlist li {
+    color: var(--txt-color-gray);
+    padding: 0 20px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.nav-name-playlist :first-child {
+    margin-top: 10px;
+}
 
 
 
