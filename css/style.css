@@ -125,6 +125,40 @@
 
 
 
+/* NAV BOTTOM PLAYLIST */
+.nav-bottom-playlist {
+    color: var(--txt-color-gray);
+    padding: 10px 20px;
+    padding-bottom: 5px;
+}
+
+.nav-bottom-playlist .nav-bottom-install span {
+    font-weight: bold;
+}
+
+.nav-bottom-playlist .nav-bottom-install {
+    border-bottom: 1px solid var(--txt-color-gray);
+    padding: 10px 0;
+}
+
+.nav-bottom-playlist .nav-bottom-user img {
+    width: 30px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.nav-bottom-playlist .nav-bottom-user span {
+    margin: auto 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-bottom-playlist .nav-bottom-user .img-bottom {
+    display: flex;
+    margin: 10px 0;
+    margin-bottom: 0px;
+}
+
 /* MAIN */
 #main-app {
     display: flex;
