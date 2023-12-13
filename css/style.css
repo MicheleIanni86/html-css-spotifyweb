@@ -51,10 +51,19 @@
  #nav-bar .nav-home img {
     width: 35px;
  }
+
 #nav-bar .nav-home span {
     color: var(--txt-color-gray);
     margin: auto 5px;
     font-weight: bold;
+}
+.nav-home .home {
+    margin-left: -20px;
+    border-left: 3px solid #adff2f;
+}
+
+.nav-home .home img {
+    margin-left: 17px;
 }
 
 .nav-add-playlist {
@@ -205,8 +214,17 @@
     color: var(--txt-color-gray);
   }
 
-.list-main-nav ul :first-child {
+.list-main-nav ul span {
+    width: 35px;
     border-bottom: 2px solid #adff2f;
+    display: inline-block;
+    position: absolute;
+    left: 53px;
+    bottom: -3px;
+}
+
+.list-main-nav ul #green-underline {
+    position: relative;
 }
 
 
