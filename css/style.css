@@ -559,6 +559,18 @@
 /* MEDIA QUERY 768px */
 @media all and (max-width: 768px) {
 
+    /* MAIN CENTER */
+    #recently .col {
+        width: calc(100%/2 - 20px);
+    }
+    #create-for .col {
+        width: calc(100%/2 - 20px);
+    }
+
+    #artist-popular .col {
+        width: calc(100%/2 - 20px);
+    }
+
 
 }
 
