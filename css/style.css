@@ -36,6 +36,11 @@
     margin: 22px 20px;
 }
 
+
+.logo-small {
+    display: none;
+}
+
 .nav-home {
     display: flex;
     flex-direction: column;
@@ -593,5 +598,50 @@
 /* MEDIA QUERY 576px */
 @media all and (max-width: 576px) {
 
+    /* NAV BAR */
+    .nav-logo {
+        margin: 22px auto;
+    }
+    
+    .nav-logo :first-child {
+        display: none;
+    }
+
+    .nav-logo .logo-small {
+        display: block;
+    }
+
+    .nav-home {
+        padding: 0;
+        align-items: center;
+        
+    }
+
+    #nav-bar {
+        width: 60px;
+        overflow: hidden;
+    }
+
+    #nav-bar .nav-home span, 
+    .nav-add-playlist,
+    .nav-name-playlist :first-child {
+        display: none;
+    }
+
+    .nav-bottom-playlist .nav-bottom-install span,
+    .nav-bottom-playlist .nav-bottom-user span {
+        display: none;
+    }
+
+    .nav-bottom-playlist .nav-bottom-install {
+        border-bottom: 0;
+    }
+    .nav-bottom-playlist {
+        padding: 0;
+        text-align: center;
+    }
+    .nav-bottom-playlist .nav-bottom-user .img-bottom {
+        display: block;
+    }
 
 }
