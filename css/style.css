@@ -396,3 +396,138 @@
     width: 100vw;
     height: 125px;
 }
+
+.container-foot {
+    display: flex;
+    height: 100%;
+}
+
+
+/* LEFT FOOTER */
+#footer .container-foot .left-foot {
+    display: flex;
+    width: 30%;
+}
+
+.left-foot .artist-played {
+    display: flex;
+    width: fit-content;
+    align-self: center;
+}
+
+.left-foot .artist-played img {
+    margin: auto 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.left-foot .artist-played .name-play {
+    align-self: center;
+}
+
+.left-foot .artist-played .name-play :first-child {
+    font-weight: bold;
+    color: white;
+}
+.left-foot .artist-played .name-play :last-child {
+    font-weight: bold;
+    color: var(--txt-color-gray);
+    font-size: 14px;
+}
+
+.left-foot .artist-played-icon {
+    color: var(--txt-color-gray);
+    display: flex;
+    align-self: center;
+    font-size: 20px;
+    margin-left: 40px;
+    gap: 15px;    
+}
+
+
+
+/* CENTER FOOTER */
+#footer .container-foot .center-foot {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.center-foot .track-play {
+    display: flex;
+    color: white;
+    font-size: 28px;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.center-foot .track-play :nth-child(3) {
+    font-size: 45px;
+}
+
+.center-foot .track-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.center-foot .track-bar .track-in, 
+.center-foot .track-bar .track-end {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.center-foot .track-bar .progress-bar {
+    height: 5px;
+    width: 70%;
+    border-radius: 5px;
+    background-color: var(--txt-color-gray);
+}
+
+.center-foot .track-bar .progress-bar :first-child {
+    height: 5px;
+    width: 20%;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* RIGHT FOOTER */
+#footer .container-foot .right-foot {
+    width: 30%;
+    margin: auto;
+}
+
+.right-foot .set-track {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-foot .set-track :first-child{
+    padding: 0 15px;
+    letter-spacing: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+
+.right-foot .set-track .progress-bar {
+    height: 5px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: var(--txt-color-gray);
+    margin-right: 20px;
+}
+
+.right-foot .set-track .progress-bar :first-child {
+    height: 5px;
+    width: 20%;
+    border-radius: 5px;
+    background-color: white;
+
+}
