@@ -27,7 +27,8 @@
     flex-direction: column;
     background-color: var(--bgr-color-nav);
     width: 360px;
-    height: calc(100vh - 125px);    
+    height: calc(100vh - 125px);
+    overflow: auto;    
 }
 
 .nav-logo {
@@ -74,6 +75,7 @@
     width: 100%;
     flex-grow: 1;
     overflow: auto;
+    min-height: 150px;
 }
 
 .nav-bottom-playlist {
@@ -294,32 +296,44 @@
 
 
 /* SEZIONE CREATE FOR */
-#create-for {
+#create-for .container {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#create-for .row {
     display: flex;
-    width: fit-content;
+    width: 100%;
 }
 
-#create-for .release-radar,
-#create-for .daily-mix {
-    width: 238.3px;
+#create-for .col {
+    width: calc(100% / 6 );
+    margin: 10px 10px;
+    text-align: center;
+
 }
 
-#create-for .release-radar {
-    margin-right: 20px;
-}
-
-#create-for img {
+#create-for .container img {
+    display: block;
     max-width: 100%;
 }
 
-#create-for h4 {
+#create-for .container h4 {
     margin-top: 17px;
     margin-bottom: 10px;
     font-size: 20px;
     color: white;
     font-weight: bold;
-    text-align: center;
 }
+
+#create-for .container span {
+    color: var(--txt-color-gray);
+    font-weight: bold;
+}
+
+
+
+
 
 /* ARTIST POPULAR H2 TITLE */
 .title-artist-popular {
@@ -339,34 +353,41 @@
 
 
 /* SEZIONE ARTIST POPULAR */
-#artist-popular {
+#artist-popular .container {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#artist-popular .row {
     display: flex;
-    width: fit-content;
+    width: 100%;
 }
 
-#artist-popular .lana-del-rey,
-#artist-popular .lud-einaudi {
-    width: 238.3px;
+#artist-popular .col {
+    width: calc(100% / 6 );
+    margin: 10px 10px;
+    text-align: center;
+
 }
 
-#artist-popular .lana-del-rey {
-    margin-right: 20px;
-}
-
-#artist-popular img {
+#artist-popular .container img {
+    display: block;
     max-width: 100%;
     border-radius: 50%;
 }
 
-#artist-popular h4 {
+#artist-popular .container h4 {
     margin-top: 17px;
     margin-bottom: 10px;
     font-size: 20px;
     color: white;
     font-weight: bold;
-    text-align: center;
 }
 
+#artist-popular .container span {
+    color: var(--txt-color-gray);
+    font-weight: bold;
+}
 
 
 /* FOOTER */
