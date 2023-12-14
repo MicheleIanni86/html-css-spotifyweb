@@ -517,7 +517,6 @@
 }
 
 .right-foot .set-track :first-child{
-    padding: 0 15px;
     letter-spacing: 10px;
     font-size: 18px;
     color: white;
@@ -568,6 +567,18 @@
         line-height: 45px;
     }
 
+    /* FOOTER */
+
+    /* LEFT FOOTER */
+    .left-foot .artist-played-icon {
+        margin-left: 20px;
+    }    
+    
+
+    /* RIGHT FOOT */
+    .right-foot .set-track :first-child {
+        letter-spacing: 5px;
+    }
 
 }
 
@@ -593,6 +604,22 @@
     }
 
 
+    /* FOOTER */
+    .left-foot .artist-played-icon {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* LEFT FOOT */
+    .left-foot .artist-played img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+
 }
 
 /* MEDIA QUERY 576px */
@@ -602,7 +629,7 @@
     .nav-logo {
         margin: 22px auto;
     }
-    
+
     .nav-logo :first-child {
         display: none;
     }
@@ -644,4 +671,29 @@
         display: block;
     }
 
+
+    /* FOOTER */
+
+    /* LEFT FOOT */
+    .left-foot .artist-played-icon {
+        margin-left: 10px;
+    }
+
+    /* CENTER FOOT */
+    #footer .container-foot .center-foot {
+        padding: 0 10px;
+    }
+
+    /* RIGHT FOOTER */
+
+    .right-foot .set-track :first-child {
+        letter-spacing: 0px;
+        font-size: 15px;
+    }
+    
+    
+    .right-foot .set-track .progress-bar {
+        margin-left: 5px;
+    }
+    
 }
