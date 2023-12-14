@@ -59,10 +59,16 @@
  }
 
 #nav-bar .nav-home span {
+    cursor: pointer;
     color: var(--txt-color-gray);
     margin: auto 5px;
     font-weight: bold;
 }
+
+#nav-bar .nav-home span:hover {
+    color: white;
+}
+
 .nav-home .home {
     margin-left: -20px;
     border-left: 3px solid #adff2f;
@@ -98,15 +104,26 @@
 }
 
 .nav-add-playlist h3 {
+    cursor: pointer;
+    color: white;
+}
+
+.nav-add-playlist h3:hover {
     color: white;
 }
 
 .nav-add-playlist div {
+    cursor: pointer;
     font-size: 60px;
     display: flex;
     align-items: center;
     margin: 10px auto;
 }
+
+.nav-add-playlist div:hover {
+    color: white;
+}
+
 
 .nav-add-playlist div span {
     font-size: 20px;
@@ -196,8 +213,12 @@
     font-weight: bold;
     font-size: 17px;
     margin-right: 20px;
-  }
+    transition-duration: 0.3s;
+}
 
+#top-bar .btn-upgrade:hover {
+    transform: scale(1.1)
+}
 
 
 /* MAIN CONTENT */
@@ -209,17 +230,22 @@
 .list-main-nav {
     margin-top: 20px;
     margin-bottom: 45px;
-}
+    }
 .list-main-nav ul{
     text-align: center;
 }
 
 .list-main-nav ul li {
+    cursor: pointer;
     display: inline;
     padding: 0px 17px;
     font-weight: bold;
     color: var(--txt-color-gray);
-  }
+}
+
+  .list-main-nav ul li:hover {
+    color: white;
+}
 
 .list-main-nav ul span {
     width: 35px;
@@ -268,6 +294,10 @@
 #recently .container img {
     display: block;
     max-width: 100%;
+}
+
+#recently .container img:hover {
+
 }
 
 #recently .container h4 {
