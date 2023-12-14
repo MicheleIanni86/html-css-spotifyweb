@@ -250,10 +250,11 @@
 #recently .row {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 #recently .col {
-    width: calc(100% / 6 );
+    width: calc(100% / 6 - 20px);
     margin: 10px 10px;
     text-align: center;
 
@@ -304,10 +305,11 @@
 #create-for .row {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 #create-for .col {
-    width: calc(100% / 6 );
+    width: calc(100% / 6 - 20px);
     margin: 10px 10px;
     text-align: center;
 
@@ -361,10 +363,11 @@
 #artist-popular .row {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 #artist-popular .col {
-    width: calc(100% / 6 );
+    width: calc(100% / 6 - 20px);
     margin: 10px 10px;
     text-align: center;
 
@@ -529,5 +532,38 @@
     width: 20%;
     border-radius: 5px;
     background-color: white;
+}
+
+
+
+/* -----------------------MEDIA QUERY------------------------------------- */
+
+/* MEDIA QUERY 992px */
+@media all and (max-width: 992px) {
+
+    /* MAIN CENTER */
+    #recently .col {
+        width: calc(100%/4 - 20px);
+    }
+    #create-for .col {
+        width: calc(100%/4 - 20px);
+    }
+
+    #artist-popular .col {
+        width: calc(100%/4 - 20px);
+    }
+
+
+}
+
+/* MEDIA QUERY 768px */
+@media all and (max-width: 768px) {
+
+
+}
+
+/* MEDIA QUERY 576px */
+@media all and (max-width: 576px) {
+
 
 }
