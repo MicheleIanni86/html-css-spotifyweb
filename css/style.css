@@ -616,13 +616,36 @@
     width: 70%;
     border-radius: 5px;
     background-color: var(--txt-color-gray);
+    
 }
 
-.center-foot .track-bar .progress-bar :first-child {
+.center-foot .track-bar .progress-bar .white-bar {
     height: 5px;
     width: 20%;
     border-radius: 5px;
     background-color: white;
+    position: relative;
+}
+
+.center-foot .track-bar .progress-bar .pointer {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(50%, -50%);
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.center-foot .track-bar .progress-bar .white-bar:hover {
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+.center-foot .track-bar .progress-bar .white-bar:hover .pointer{
+    display: block;
 }
 
 /* RIGHT FOOTER */
@@ -640,6 +663,11 @@
 .right-foot .set-track :first-child{
     letter-spacing: 10px;
     font-size: 18px;
+    color: var(--txt-color-gray);
+}
+
+.right-foot .set-track :first-child i:hover {
+    cursor: pointer;
     color: white;
 }
 
@@ -652,11 +680,33 @@
     margin-right: 20px;
 }
 
-.right-foot .set-track .progress-bar :first-child {
+.right-foot .set-track .progress-bar .white-bar {
     height: 5px;
     width: 20%;
     border-radius: 5px;
     background-color: white;
+    position: relative;
+}
+
+.right-foot .set-track .progress-bar .pointer {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.right-foot .set-track .progress-bar .white-bar:hover {
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+.right-foot .set-track .progress-bar .white-bar:hover .pointer{
+    display: block;
 }
 
 
