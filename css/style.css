@@ -190,17 +190,12 @@
 }
 
 
-
-
-
-
 /* MAIN CENTER */
 #main-center {
     background-color: var(--bgr-color-main);
     width: 100vw;
     overflow: auto;
 }
-
 
 
 /* TOP BAR */
@@ -212,11 +207,12 @@
     line-height: 110px;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 #top-bar .btn-upgrade {
     cursor: pointer;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.6);
     border: 2px solid white;
     padding: 15px 45px;
     color: white;
@@ -507,7 +503,6 @@
     height: 100%;
 }
 
-
 /* LEFT FOOTER */
 #footer .container-foot .left-foot {
     display: flex;
@@ -615,8 +610,7 @@
     height: 5px;
     width: 70%;
     border-radius: 5px;
-    background-color: var(--txt-color-gray);
-    
+    background-color: var(--txt-color-gray); 
 }
 
 .center-foot .track-bar .progress-bar .white-bar {
@@ -671,7 +665,6 @@
     color: white;
 }
 
-
 .right-foot .set-track .progress-bar {
     height: 5px;
     width: 30%;
@@ -711,7 +704,7 @@
 
 
 
-/* -----------------------MEDIA QUERY------------------------------------- */
+/* -----------------------992px------------------------------------- */
 
 /* MEDIA QUERY 992px */
 @media all and (max-width: 992px) {
@@ -752,6 +745,7 @@
     }
 
 }
+/* -----------------------768px-------------------------------------- */
 
 /* MEDIA QUERY 768px */
 @media all and (max-width: 768px) {
@@ -792,6 +786,9 @@
 
 
 }
+
+
+/* ---------------------------576px------------------------------------ */
 
 /* MEDIA QUERY 576px */
 @media all and (max-width: 576px) {
